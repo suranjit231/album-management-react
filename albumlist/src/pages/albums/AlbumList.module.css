@@ -1,0 +1,117 @@
+.albumListContainer {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.albumBox {
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-out;
+}
+
+.albumBox:hover{
+    transform: translateY(-2px);
+}
+
+.albumImageBox{
+    width: 100%;
+    height: 70%;
+    padding: 5px 10px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.albumTitle{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+    /* border: 1px solid red;
+     */
+   
+}
+
+.albumImageBox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.albumActionsControl{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 5px 10px 12px 10px;
+}
+
+.editIcon, .deleteIcon{
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.editIcon{
+    color: rgb(33, 33, 240);
+    
+}
+
+.editIcon:active{
+    transform: scale(0.80);
+}
+
+
+.deleteIcon{
+    color: red;
+}
+
+.deleteIcon:active{
+    transform: scale(0.80);
+}
+
+.loaderContainer{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* ========= album list paginamtion styling ========= */
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   padding-bottom: 30px;
+   flex-wrap: wrap;
+  }
+  
+  .pageButton {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 6px 15px;
+    margin:5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .activePageButton {
+    background-color: #007bff;
+    color: white;
+  }
+  

@@ -1,0 +1,88 @@
+
+/* ========= navbar styling start here ========= */
+.navbarContainer{
+    width: 100%;
+    padding: 5px 15px;
+    height: 45px;
+    background-color: rgb(10, 247, 10);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leftNavbar{
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    /* max-width: 400px; */
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    gap: 30px;
+}
+
+.navLogo{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    /* border: 1px solid black; */
+}
+
+.navLogo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.searchContainer{
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid maroon; */
+}
+
+.searchContainer input{
+    flex: 1;
+    padding: 5px 12px;
+    height: inherit;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.searchContainer input:focus{
+    border: 1.5px solid rgb(80, 80, 80);
+}
+
+.searchIcon{
+    position: absolute;
+    right: 10px;
+    color: gray;
+
+}
+
+/* ======== add album nevagation button ======= */
+.navbarContainer a{
+    margin-left: auto;
+   
+}
+
+.addButtn{
+    padding: 5px 10px;
+    align-self: flex-end;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    background-color: #fff;
+    color: rgb(10, 247, 10);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+}
+
+.addButtn:hover{
+    background-color: rgb(247, 10, 42);
+    color: #fff;
+}
