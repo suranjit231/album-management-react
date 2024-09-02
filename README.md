@@ -21,7 +21,7 @@ This React application allows users to manage albums by fetching, adding, updati
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/album-management-app.git
+   git clone https://github.com/suranjit231/album-management-react.git
    ```
 2. Navigate to the project directory:
     ```
